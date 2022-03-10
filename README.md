@@ -21,3 +21,9 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
 ->실행할 곳으로 이동(cd명령어⭐)<br>
     * ![image](https://user-images.githubusercontent.com/73941301/156971661-7c961828-8b84-4451-ad4c-745c5af672dc.png)<br>
 ->실행 할 때는 node뒤에 경로 써주기/console.log로 실행하면 보이는 터미널 화면
+
+* url의 형식
+   * protocol / host(domain) / post / path / query string
+   * http://opentutorials.org:3000/main?id=HTML&page=12
+   * url이라고 하는 모듈을 사용한다 => require('url');
+   * queryString에 따라 다른 정보를 출력하는 웹 애플리케이션 => response.end(queryData.id);
