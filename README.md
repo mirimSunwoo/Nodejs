@@ -34,3 +34,15 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
    * ```<title>WEB1 - HTML</title> => <title>WEB1 - ${title}</title>```
    * ![image](https://user-images.githubusercontent.com/73941301/157686313-7e7593c1-5fc1-48bd-a0c9-8058fe192b15.png)
      ![image](https://user-images.githubusercontent.com/73941301/157686401-18b9b133-d51d-4c87-aad5-eaf595f8f7a7.png)
+* __파일읽기__
+   * CRUD : Create Read Update Delete 정보를 다루는 핵심적인 처리 방법
+   * ``` var fs = require('fs');
+         fs.readFile('sample.txt', 'utf8',function(err,data){
+             console.log(data);
+         });
+     ```
+   * ![image](https://user-images.githubusercontent.com/73941301/157787089-4b6fe42a-73d7-4205-8f6a-a3dbab2239c8.png)<br>
+      => node가 상위 디렉터리에서 실행되었기 때문에 나오지 않는다
+   * ![image](https://user-images.githubusercontent.com/73941301/157787203-2d83fb81-780c-41fa-a97f-48cd0539dfe3.png)<br>
+      => cd로 경로를 바꿔주고 실행시켜주면 처음엔 버퍼 형태로 나오지만, 코드에 utf-8이라고 넣어주면 파일의 내용이 나온다
+
