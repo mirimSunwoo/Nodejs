@@ -63,5 +63,11 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
    * pathName은 queryString이 포함되어있지 않다 ('/')
    * ```response.writeHead(200);``` 서버가 브라우저에게 200을 주면 성공적으로 파일 전송 완료 
    * ```response.writeHead(404);``` 서버가 브라우저에게 404 주면 Not found를 출력
-    ![image](https://user-images.githubusercontent.com/73941301/159114613-538bd64a-6d89-48e7-b068-1a66b73c5a5c.png)
+   * ![image](https://user-images.githubusercontent.com/73941301/159114613-538bd64a-6d89-48e7-b068-1a66b73c5a5c.png)
+ * __홈페이지 구현__
+   * ![image](https://user-images.githubusercontent.com/73941301/159115036-7c442903-b542-4f3c-8173-662fa4440982.png)
+   * ```if(queryData.id === undefined)```=>반복문 중첩
+      * querydata.id가 존재하지 않는다면(undefined)이라는 코드로 홈인지를 판단한다
+
+
 
