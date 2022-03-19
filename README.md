@@ -58,4 +58,10 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
    * input(parameter argument) => output
    * ``` var args = process.argv; ``` -> 콘솔로 입력받기
       * 출력해보면 배열로 되어있다. 입력한정보는 3번째 즉 [2]부터 들어가게 된다
+* __Not found__
+   * path는 queryString포함되어있다 ('/?id=CSS')
+   * pathName은 queryString이 포함되어있지 않다 ('/')
+   * ```response.writeHead(200);``` 서버가 브라우저에게 200을 주면 성공적으로 파일 전송 완료 
+   * ```response.writeHead(404);``` 서버가 브라우저에게 404 주면 Not found를 출력
+    ![image](https://user-images.githubusercontent.com/73941301/159114613-538bd64a-6d89-48e7-b068-1a66b73c5a5c.png)
 
