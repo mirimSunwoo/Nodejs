@@ -64,10 +64,24 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
    * ```response.writeHead(200);``` 서버가 브라우저에게 200을 주면 성공적으로 파일 전송 완료 
    * ```response.writeHead(404);``` 서버가 브라우저에게 404 주면 Not found를 출력
    * ![image](https://user-images.githubusercontent.com/73941301/159114613-538bd64a-6d89-48e7-b068-1a66b73c5a5c.png)
- * __홈페이지 구현__
+* __홈페이지 구현__
    * ![image](https://user-images.githubusercontent.com/73941301/159115036-7c442903-b542-4f3c-8173-662fa4440982.png)
    * ```if(queryData.id === undefined)```=>반복문 중첩
       * querydata.id가 존재하지 않는다면(undefined)이라는 코드로 홈인지를 판단한다
+* __반복문__
+   * **while** : 어떤 조건문이 참이기만 하면 문장을 계속해서 반복한다
+   * **for** : 특정 조건이 거짓으로 판별될 때까지 반복한다
+   * **forEach** : for문과 유사하지만 index와 조건식,increase를 정의하지 않아도 callback함수를 통해 기능 수행이 가능하다
+   * **do while** : 조건문을 확인하기 전에 한번은 실행한다. for문과 유사한 특징
+   * **for in** : 객체의 열거 속성을 통해 지정된 변수를 바복한다
+   * **for of** : 각각의 고유한 특성의 값을 실행할 명령과 함께 사용자 지정 반복후크를 호출하여 반복가능한 객체를 통해 반복하는 루프를 만든다
+* __배열__
+   * ```var arr = ['A','B','C','D'];``` => 배열 생성
+   * ```console.log(arr[1]);``` => 값 불러오기
+   * ```arr[2] = 3;``` => 배열 값 변경
+   * ```console.log(arr.length);``` => 데이터의 개수
+   * ```arr.push('E');``` => 데이터 (맨 뒤에)삽입
 
+* __파일목록 알아내기__
 
 
