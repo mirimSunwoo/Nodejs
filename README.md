@@ -83,5 +83,24 @@ Node.js는 사용자에게 전송할 데이터를 생성한다
    * ```arr.push('E');``` => 데이터 (맨 뒤에)삽입
 
 * __파일목록 알아내기__
-
+   * ```
+      fs.readdir(testFolder, function(error, filelist){
+          console.log(filelist);
+      })
+     ```
+   * => data에 파일이 삽입되면 읽어서 list로 출력
+*  __함수__
+   * 함수는 프로그램에 대해 이름을 붙이는 것과 같다.
+   * 함수를 사용하면 정확하게 똑같은 코드라고 확신할 수 있다.
+   * 유지보수의 편리성이 있다
+   * 중복되는 코드를 최소화 한다
+   * ```
+      function sum(first,second){ //parameter(매개변수)
+          return first+second; //return = 어떤값을 출력한다 + 함수를 종료시킨다
+      }
+      console.log(sum(2,4)); //argument
+     ```
+  * __수업을 마치며__
+      > 초심자를 위한 수업 가이드는 끝이 났지만, 강의를 들으면서 이해안되는 부분도 있어서 그부분은 다시 강의를 듣고, 뒤에 부분도 천천히 들어 볼 생각입니다ผ(•̀_•́ผ)
+   
 
